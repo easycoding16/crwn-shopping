@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import Header from "./components/header/header.component";
+import SignInAndSignUpPage from "./pages/sigin-and-signup/sigin-and-signup.component";
 
 import "./App.css";
 
@@ -22,6 +23,7 @@ class App extends React.Component {
           <Route exact path="/" component={HomePage} />
           <Route path="/hats" component={HatsPage} />
           <Route exact path="/shop" component={ShopPage} />
+          <Route exact path="/signin" component={SignInAndSignUpPage} />
         </Switch>
       </div>
     );
